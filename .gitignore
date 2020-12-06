@@ -1,5 +1,9 @@
 src/css/bootstrap.css
 src/css/bootstrap.min.css
+src/css/bootstrap.min.css.map
 src/js/bootstrap.min.js
+src/js/bootstrap.min.js.map
 src/js/jquery.min.js
+src/js/jquery.min.map
 src/js/popper.min.js
+src/js/popper.min.js.map
