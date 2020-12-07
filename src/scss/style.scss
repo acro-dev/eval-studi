@@ -20,14 +20,15 @@ $color4: #f2d5f8;
 }
 
 body {
-  background-color: $color4;
+  background-color: lavender;
 }
 
 /* --- Navbar --- */
 .navbar {
+  background-color:$color1;
   box-shadow: 0 5px 5px #bfabcb;
   .navbar-brand {
-    font-size: 50px;
+    font-size: 2.5rem;
     .logo {
       height: 80px;
     }
@@ -37,12 +38,12 @@ body {
 .landing {
   @include flexCenter(column);
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background: {
     image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
     size: cover;
     position: center;
-    attachment: fixed;
+    //attachment: fixed;
   }
   .landing-content {
     @include flexCenter(column);

@@ -7,60 +7,38 @@
 }
 
 body {
-  background-color: #f2d5f8;
+  background-color: lavender;
 }
 
 /* --- Navbar --- */
 .navbar {
-  -webkit-box-shadow: 0 5px 5px #bfabcb;
-          box-shadow: 0 5px 5px #bfabcb;
+  background-color: #8d89a6;
+  box-shadow: 0 5px 5px #bfabcb;
 }
-
 .navbar .navbar-brand {
-  font-size: 50px;
+  font-size: 2.5rem;
 }
-
 .navbar .navbar-brand .logo {
   height: 80px;
 }
 
 /* --- Landing page --- */
 .landing {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background-image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
-
 .landing .landing-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -68,28 +46,25 @@ body {
   text-align: center;
   color: white;
 }
-
 .landing .landing-content h1 {
   position: relative;
   left: 1.5rem;
   font-family: "Satisfy";
   font-size: 5rem;
 }
-
 .landing .landing-content h1 .h1-small {
   display: block;
   position: relative;
   left: -4.5rem;
   font-size: 2rem;
 }
-
 .landing .landing-content p {
   font-style: italic;
 }
 
 footer {
   background-color: #8d89a6;
-  -webkit-box-shadow: 0 -5px 5px #bfabcb;
-          box-shadow: 0 -5px 5px #bfabcb;
+  box-shadow: 0 -5px 5px #bfabcb;
 }
+
 /*# sourceMappingURL=style.css.map */
