@@ -84,7 +84,14 @@ section {
     font-family: "Satisfy";
   }
 }
-
+.card {
+  background-color: transparent;
+  text-align: center;
+  .card-img-top {
+    width: 60%;
+    margin: auto;
+  }
+}
 footer {
   background-color: $color1;
   box-shadow: 0 -5px 5px $color2;

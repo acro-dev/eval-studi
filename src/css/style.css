@@ -73,6 +73,15 @@ section h3 {
   font-family: "Satisfy";
 }
 
+.card {
+  background-color: transparent;
+  text-align: center;
+}
+.card .card-img-top {
+  width: 60%;
+  margin: auto;
+}
+
 footer {
   background-color: #8d89a6;
   box-shadow: 0 -5px 5px #bfabcb;
