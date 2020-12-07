@@ -16,11 +16,12 @@ body {
           box-shadow: 0 5px 5px #bfabcb;
 }
 
+.navbar .navbar-brand {
+  font-size: 50px;
+}
+
 .navbar .navbar-brand .logo {
-  height: 3rem;
-  position: relative;
-  left: -1.5rem;
-  top: 0.75rem;
+  height: 80px;
 }
 
 /* --- Landing page --- */
