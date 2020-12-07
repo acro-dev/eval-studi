@@ -6,6 +6,7 @@ $color1: #8d89a6;
 $color2: #bfabcb;
 $color3: #e6c0e9;
 $color4: #f2d5f8;
+$color5: lavender;
 
 $title-font: "Satisfy";
 $subtitle-font: "Lobster Two";
@@ -25,25 +26,33 @@ $core-font: "Montserrat";
 }
 
 body {
-  background-color: lavender;
+  background-color: $color5;
 }
 
 /* --- Navbar --- */
 .navbar {
-  background-color: $color1;
-  box-shadow: 0 5px 5px #bfabcb;
-  .navbar-brand {
-    font-size: 2rem;
-    .logo {
-      height: 60px;
-    }
-  }
+  background: linear-gradient(to bottom right, $color2, $color1);
+  box-shadow: 0 5px 5px #bbb;
+
+  // .nav-link {
+  //   display: block;
+  //   color: white;
+  //   padding: 0.5rem 1rem;
+  //   margin-left: 1rem;
+  //   text-align: center;
+  //   &:hover {
+  //     color: rgba(255, 255, 255, 1);
+  //     background-color: rgba(255, 255, 255, 0.2);
+  //     text-decoration: underline;
+  //   }
+  // }
 }
+
 /* --- Landing page --- */
 .landing {
   @include flexCenter(column);
   width: 100%;
-  height: 80vh;
+  height: calc(100vh - 130px);
   background: {
     image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
     size: cover;
@@ -99,7 +108,7 @@ section {
 }
 footer {
   background-color: $color1;
-  box-shadow: 0 -5px 5px $color2;
+  // box-shadow: 0 -5px 5px $color2;
   h2 {
     font-size: 2rem;
     font-weight: 400;
