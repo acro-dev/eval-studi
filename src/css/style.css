@@ -60,6 +60,11 @@ body {
 }
 .landing .landing-content p {
   font-style: italic;
+  width: 80%;
+}
+
+section h3 {
+  font-family: "Satisfy";
 }
 
 footer {
