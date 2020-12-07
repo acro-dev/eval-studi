@@ -95,7 +95,7 @@ h2 {
 }
 section {
   h3 {
-    font-family: "Satisfy";
+    font-family: $subtitle-font;
   }
 }
 .card {
@@ -104,6 +104,10 @@ section {
   .card-img-top {
     width: 60%;
     margin: auto;
+  }
+  h5 {
+    font-family: $subtitle-font;
+    font-size: 2rem;
   }
 }
 footer {
