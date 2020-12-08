@@ -31,6 +31,7 @@ header .navbar {
 
 /* --- Landing page --- */
 .landing {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,13 +47,44 @@ header .navbar {
           flex-direction: column;
   width: 100%;
   height: calc(100vh - 130px);
-  background-image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
-.landing .landing-content {
+.bg-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bg {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing-content {
+  z-index: 4000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,21 +106,21 @@ header .navbar {
   color: white;
 }
 
-.landing .landing-content h1 {
+.landing-content h1 {
   position: relative;
   left: 1.5rem;
   font-family: "Satisfy";
   font-size: 5rem;
 }
 
-.landing .landing-content h1 .h1-small {
+.landing-content h1 .h1-small {
   display: block;
   position: relative;
   left: -4.5rem;
   font-size: 2rem;
 }
 
-.landing .landing-content p {
+.landing-content p {
   font-style: italic;
   width: 80%;
 }
