@@ -49,6 +49,7 @@ header .navbar {
   background-image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .landing .landing-content {

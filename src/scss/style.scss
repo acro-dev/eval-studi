@@ -68,7 +68,7 @@ header .navbar {
     image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
     size: cover;
     position: center;
-    //attachment: fixed;
+    attachment: fixed;
   }
   .landing-content {
     @include flexCenter(column);
@@ -112,6 +112,7 @@ header .navbar {
     font-size: 2rem;
   }
 }
+
 footer {
   background-color: $color1;
   // box-shadow: 0 -5px 5px $color2;
