@@ -27,10 +27,21 @@ $core-font: "Montserrat";
 
 body {
   background-color: $color5;
+
+  h2 {
+    font-family: $subtitle-font;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  section {
+    h3 {
+      font-family: $subtitle-font;
+    }
+  }
 }
 
 /* --- Navbar --- */
-.navbar {
+header .navbar {
   background: linear-gradient(to bottom right, $color2, $color1);
   box-shadow: 0 5px 5px #bbb;
 
@@ -88,16 +99,7 @@ body {
     }
   }
 }
-h2 {
-  font-family: $subtitle-font;
-  font-size: 3rem;
-  font-weight: 700;
-}
-section {
-  h3 {
-    font-family: $subtitle-font;
-  }
-}
+
 .card {
   background-color: transparent;
   text-align: center;
@@ -115,6 +117,47 @@ footer {
   // box-shadow: 0 -5px 5px $color2;
   h2 {
     font-size: 2rem;
+    font-weight: 400;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  .fa-facebook:hover {
+    color: #4267b2;
+    background: white;
+    border-radius: 50%;
+  }
+  .fa-instagram:hover {
+    background: #d6249f;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fa-envelope:hover {
+    color: rgb(204, 49, 38);
+  }
+}
+
+#events {
+  h3 {
+    font-family: $core-font;
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 2rem;
+    font-family: $subtitle-font;
+  }
+  h5 {
+    font-size: 1.2rem;
     font-weight: 400;
   }
 }

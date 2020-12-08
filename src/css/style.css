@@ -11,8 +11,18 @@ body {
   background-color: lavender;
 }
 
+body h2 {
+  font-family: "Lobster Two";
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+body section h3 {
+  font-family: "Lobster Two";
+}
+
 /* --- Navbar --- */
-.navbar {
+header .navbar {
   background: -webkit-gradient(linear, left top, right bottom, from(#bfabcb), to(#8d89a6));
   background: linear-gradient(to bottom right, #bfabcb, #8d89a6);
   -webkit-box-shadow: 0 5px 5px #bbb;
@@ -82,16 +92,6 @@ body {
   width: 80%;
 }
 
-h2 {
-  font-family: "Lobster Two";
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-section h3 {
-  font-family: "Lobster Two";
-}
-
 .card {
   background-color: transparent;
   text-align: center;
@@ -113,6 +113,42 @@ footer {
 
 footer h2 {
   font-size: 2rem;
+  font-weight: 400;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer .fa-facebook:hover {
+  color: #4267b2;
+  background: white;
+  border-radius: 50%;
+}
+
+footer .fa-instagram:hover {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .fa-envelope:hover {
+  color: #cc3126;
+}
+
+#events h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+#events h4 {
+  font-size: 2rem;
+  font-family: "Lobster Two";
+}
+
+#events h5 {
+  font-size: 1.2rem;
   font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
