@@ -27,36 +27,32 @@ $core-font: "Montserrat";
 
 body {
   background-color: $color5;
-
-  h2 {
-    font-family: $subtitle-font;
-    font-size: 3rem;
+  h1 {
+    font-size: 3.5rem;
     font-weight: 700;
   }
-  section {
-    h3 {
-      font-family: $subtitle-font;
-    }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
   }
+  h1,
+  h2,
+  h3 {
+    font-family: $subtitle-font;
+  }
+  hr {
+    width: 90%;
+  }
+}
+
+.container hr {
+  width: 100%;
 }
 
 /* --- Navbar --- */
 header .navbar {
   background: linear-gradient(to bottom right, $color2, $color1);
   box-shadow: 0 5px 5px #bbb;
-
-  // .nav-link {
-  //   display: block;
-  //   color: white;
-  //   padding: 0.5rem 1rem;
-  //   margin-left: 1rem;
-  //   text-align: center;
-  //   &:hover {
-  //     color: rgba(255, 255, 255, 1);
-  //     background-color: rgba(255, 255, 255, 0.2);
-  //     text-decoration: underline;
-  //   }
-  // }
 }
 
 /* --- Landing page --- */
@@ -79,13 +75,13 @@ header .navbar {
     text-align: center;
     color: white;
 
-    h1 {
+    .landing-title {
       position: relative;
       left: 1.5rem;
       font-family: $title-font;
       font-size: 5rem;
 
-      .h1-small {
+      .landing-title-small {
         display: block;
         position: relative;
         left: -4.5rem;
@@ -100,11 +96,11 @@ header .navbar {
   }
 }
 
-.card {
+#membres .card {
   background-color: transparent;
   text-align: center;
   .card-img-top {
-    width: 60%;
+    width: 70%;
     margin: auto;
   }
   h5 {
@@ -139,26 +135,12 @@ footer {
       #d6249f 60%,
       #285aeb 90%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .fa-envelope:hover {
     color: rgb(204, 49, 38);
-  }
-}
-
-#events {
-  h3 {
-    font-family: $core-font;
-    font-size: 1.5rem;
-  }
-  h4 {
-    font-size: 2rem;
-    font-family: $subtitle-font;
-  }
-  h5 {
-    font-size: 1.2rem;
-    font-weight: 400;
   }
 }

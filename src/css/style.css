@@ -11,14 +11,28 @@ body {
   background-color: lavender;
 }
 
-body h2 {
-  font-family: "Lobster Two";
-  font-size: 3rem;
+body h1 {
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
-body section h3 {
+body h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+body h1,
+body h2,
+body h3 {
   font-family: "Lobster Two";
+}
+
+body hr {
+  width: 90%;
+}
+
+.container hr {
+  width: 100%;
 }
 
 /* --- Navbar --- */
@@ -74,14 +88,14 @@ header .navbar {
   color: white;
 }
 
-.landing .landing-content h1 {
+.landing .landing-content .landing-title {
   position: relative;
   left: 1.5rem;
   font-family: "Satisfy";
   font-size: 5rem;
 }
 
-.landing .landing-content h1 .h1-small {
+.landing .landing-content .landing-title .landing-title-small {
   display: block;
   position: relative;
   left: -4.5rem;
@@ -93,17 +107,17 @@ header .navbar {
   width: 80%;
 }
 
-.card {
+#membres .card {
   background-color: transparent;
   text-align: center;
 }
 
-.card .card-img-top {
-  width: 60%;
+#membres .card .card-img-top {
+  width: 70%;
   margin: auto;
 }
 
-.card h5 {
+#membres .card h5 {
   font-family: "Lobster Two";
   font-size: 2rem;
 }
@@ -130,26 +144,12 @@ footer .fa-facebook:hover {
 footer .fa-instagram:hover {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 footer .fa-envelope:hover {
   color: #cc3126;
-}
-
-#events h3 {
-  font-family: "Montserrat";
-  font-size: 1.5rem;
-}
-
-#events h4 {
-  font-size: 2rem;
-  font-family: "Lobster Two";
-}
-
-#events h5 {
-  font-size: 1.2rem;
-  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
