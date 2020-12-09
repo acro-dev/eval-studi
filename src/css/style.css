@@ -107,6 +107,10 @@ header .navbar {
   width: 80%;
 }
 
+.ios-bg-fix {
+  background-attachment: scroll;
+}
+
 #membres .card {
   background-color: transparent;
   text-align: center;
