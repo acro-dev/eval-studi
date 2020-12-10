@@ -32,7 +32,7 @@ body hr {
 }
 
 .container hr {
-  width: 100%;
+  width: 95%;
 }
 
 /* --- Navbar --- */
@@ -155,5 +155,65 @@ footer .fa-instagram:hover {
 
 footer .fa-envelope:hover {
   color: #cc3126;
+}
+
+#events .event a {
+  color: black;
+  text-decoration: none;
+}
+
+#events .event .event-date {
+  background-color: #8d89a6;
+  border-radius: 10px 0 0 10px;
+  width: 5rem;
+  height: 5rem;
+}
+
+#events .event .event-title {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 10px 10px 0;
+}
+
+#events .event .event-title h2 {
+  font-family: "Montserrat";
+  font-size: 1rem;
+}
+
+#events .event .event-title .event-place {
+  font-size: 0.8rem;
+}
+
+#events .event .event-title .fa-map-marker-alt {
+  color: red;
+}
+
+#events .event .event-title .fa-ellipsis-h {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+}
+
+#events .event .event-title .fa-ellipsis-v {
+  display: block;
+  position: absolute;
+  right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  #events .event .event-date {
+    width: 5rem;
+    height: 5rem;
+  }
+  #events .event .event-title h2 {
+    position: relative;
+    top: 0.2rem;
+    font-size: 1.5rem;
+  }
+  #events .event .event-title .event-place {
+    font-size: 1rem;
+    margin-right: 1rem;
+    width: 12rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -46,7 +46,7 @@ body {
 }
 
 .container hr {
-  width: 100%;
+  width: 95%;
 }
 
 /* --- Navbar --- */
@@ -145,5 +145,69 @@ footer {
 
   .fa-envelope:hover {
     color: rgb(204, 49, 38);
+  }
+}
+#events {
+  .event {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    .event-date {
+      background-color: $color1;
+      border-radius: 10px 0 0 10px;
+      width: 5rem;
+      height: 5rem;
+    }
+    .event-title {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 0 10px 10px 0;
+
+      h2 {
+        font-family: $core-font;
+        font-size: 1rem;
+      }
+      .event-place {
+        font-size: 0.8rem;
+      }
+      .fa-map-marker-alt {
+        color: red;
+      }
+      .fa-ellipsis-h {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        bottom: 0.5rem;
+      }
+      .fa-ellipsis-v {
+        display: block;
+        position: absolute;
+        right: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #events {
+    .event {
+      .event-date {
+        width: 5rem;
+        height: 5rem;
+      }
+      .event-title {
+        h2 {
+          position: relative;
+          top: 0.2rem;
+          font-size: 1.5rem;
+        }
+        .event-place {
+          font-size: 1rem;
+          margin-right: 1rem;
+
+          width: 12rem;
+        }
+      }
+    }
   }
 }
