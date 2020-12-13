@@ -53,6 +53,25 @@ body {
 header .navbar {
   background: linear-gradient(to bottom right, $color2, $color1);
   box-shadow: 0 5px 5px #bbb;
+
+  .navbar-nav {
+    margin-right: 15px;
+    .nav-item {
+      @include flexCenter(column);
+    }
+    .nav-link {
+      box-sizing: content-box;
+      font-family: $subtitle-font;
+      font-size: 1.6rem;
+      border: 2px solid transparent;
+      color: $color5;
+    }
+    .nav-link:hover {
+      color: white;
+      border-top: 2px solid $color5;
+      border-bottom: 2px solid $color5;
+    }
+  }
 }
 
 /* --- Landing page --- */
