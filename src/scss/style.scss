@@ -49,38 +49,39 @@ body {
   width: 95%;
 }
 
-/* --- Navbar --- */
-header .navbar {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 4000;
-  .navbar-nav {
-    .nav-item {
-      color: $color5;
-      border: 2px solid transparent;
-      margin-left: 10px;
-      font-size: 1.3em;
-    }
-    .nav-item:hover {
-      border-top: 2px solid white;
-      color: white;
-    }
-  }
-}
-
-/* --- Landing page --- */
 .landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: {
     image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
     size: cover;
     position: center;
     attachment: fixed;
   }
-  .landing-container {
-    @include flexCenter(column);
-    height: 100vh;
+  /* --- Navbar --- */
+  .navbar {
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 4000;
+    .navbar-brand img {
+      height: 30px;
+    }
+    .navbar-nav {
+      .nav-item {
+        color: $color5;
+        border: 2px solid transparent;
+        margin-left: 10px;
+        font-size: 1.3em;
+      }
+      .nav-item:hover {
+        border-bottom: 2px solid white;
+        color: white;
+      }
+    }
   }
+  /* --- Landing page --- */
   .landing-content {
+    margin: auto;
     @include flexCenter(column);
     width: 100%;
     padding-top: 5vh;

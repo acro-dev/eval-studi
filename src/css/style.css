@@ -10,23 +10,19 @@
 body {
   background-color: lavender;
 }
-
 body h1 {
   font-size: 3.5rem;
   font-weight: 700;
 }
-
 body h2 {
   font-size: 2.5rem;
   font-weight: 700;
 }
-
 body h1,
 body h2,
 body h3 {
   font-family: "Lobster Two";
 }
-
 body hr {
   width: 90%;
 }
@@ -35,64 +31,40 @@ body hr {
   width: 95%;
 }
 
-/* --- Navbar --- */
-header .navbar {
-  width: 100%;
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* --- Navbar --- */
+  /* --- Landing page --- */
+}
+.landing .navbar {
   background: rgba(0, 0, 0, 0.7);
   z-index: 4000;
 }
-
-header .navbar .navbar-nav .nav-item {
+.landing .navbar .navbar-brand img {
+  height: 30px;
+}
+.landing .navbar .navbar-nav .nav-item {
   color: lavender;
   border: 2px solid transparent;
   margin-left: 10px;
   font-size: 1.3em;
 }
-
-header .navbar .navbar-nav .nav-item:hover {
-  border-top: 2px solid white;
+.landing .navbar .navbar-nav .nav-item:hover {
+  border-bottom: 2px solid white;
   color: white;
 }
-
-/* --- Landing page --- */
-.landing {
-  background-image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.landing .landing-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-}
-
 .landing .landing-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: auto;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -100,21 +72,18 @@ header .navbar .navbar-nav .nav-item:hover {
   text-align: center;
   color: white;
 }
-
 .landing .landing-content .landing-title {
   position: relative;
   left: 1.5rem;
   font-family: "Satisfy";
   font-size: 5rem;
 }
-
 .landing .landing-content .landing-title .landing-title-small {
   display: block;
   position: relative;
   left: -4.5rem;
   font-size: 2rem;
 }
-
 .landing .landing-content p {
   font-style: italic;
   width: 80%;
@@ -128,12 +97,10 @@ header .navbar .navbar-nav .nav-item:hover {
   background-color: transparent;
   text-align: center;
 }
-
 #membres .card .card-img-top {
   width: 70%;
   margin: auto;
 }
-
 #membres .card h5 {
   font-family: "Lobster Two";
   font-size: 2rem;
@@ -142,22 +109,18 @@ header .navbar .navbar-nav .nav-item:hover {
 footer {
   background-color: #8d89a6;
 }
-
 footer h2 {
   font-size: 2rem;
   font-weight: 400;
 }
-
 footer a:hover {
   text-decoration: none;
 }
-
 footer .fa-facebook:hover {
   color: #4267b2;
   background: white;
   border-radius: 50%;
 }
-
 footer .fa-instagram:hover {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
@@ -165,7 +128,6 @@ footer .fa-instagram:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 footer .fa-envelope:hover {
   color: #cc3126;
 }
@@ -174,39 +136,32 @@ footer .fa-envelope:hover {
   color: black;
   text-decoration: none;
 }
-
 #events .event .event-date {
   background-color: #8d89a6;
   border-radius: 10px 0 0 10px;
   width: 5rem;
   height: 5rem;
 }
-
 #events .event .event-title {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0 10px 10px 0;
 }
-
 #events .event .event-title h2 {
   font-family: "Montserrat";
   font-size: 1rem;
 }
-
 #events .event .event-title .event-place {
   font-size: 0.8rem;
 }
-
 #events .event .event-title .fa-map-marker-alt {
   color: red;
 }
-
 #events .event .event-title .fa-ellipsis-h {
   display: block;
   position: absolute;
   right: 1rem;
   bottom: 0.5rem;
 }
-
 #events .event .event-title .fa-ellipsis-v {
   display: block;
   position: absolute;
@@ -229,4 +184,5 @@ footer .fa-envelope:hover {
     width: 12rem;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
