@@ -51,46 +51,41 @@ body {
 
 /* --- Navbar --- */
 header .navbar {
-  background: linear-gradient(to bottom right, $color2, $color1);
-  box-shadow: 0 5px 5px #bbb;
-
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 4000;
   .navbar-nav {
-    margin-right: 15px;
     .nav-item {
-      @include flexCenter(column);
-    }
-    .nav-link {
-      box-sizing: content-box;
-      font-family: $subtitle-font;
-      font-size: 1.6rem;
-      border: 2px solid transparent;
       color: $color5;
+      border: 2px solid transparent;
+      margin-left: 10px;
+      font-size: 1.3em;
     }
-    .nav-link:hover {
+    .nav-item:hover {
+      border-top: 2px solid white;
       color: white;
-      border-top: 2px solid $color5;
-      border-bottom: 2px solid $color5;
     }
   }
 }
 
 /* --- Landing page --- */
 .landing {
-  @include flexCenter(column);
-  width: 100%;
-  height: calc(100vh - 130px);
   background: {
     image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
     size: cover;
     position: center;
     attachment: fixed;
   }
+  .landing-container {
+    @include flexCenter(column);
+    height: 100vh;
+  }
   .landing-content {
     @include flexCenter(column);
     width: 100%;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
     color: white;
 

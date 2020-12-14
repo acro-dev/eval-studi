@@ -37,49 +37,32 @@ body hr {
 
 /* --- Navbar --- */
 header .navbar {
-  background: -webkit-gradient(linear, left top, right bottom, from(#bfabcb), to(#8d89a6));
-  background: linear-gradient(to bottom right, #bfabcb, #8d89a6);
-  -webkit-box-shadow: 0 5px 5px #bbb;
-          box-shadow: 0 5px 5px #bbb;
-}
-
-header .navbar .navbar-nav {
-  margin-right: 15px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 4000;
 }
 
 header .navbar .navbar-nav .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-header .navbar .navbar-nav .nav-link {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  font-family: "Lobster Two";
-  font-size: 1.6rem;
-  border: 2px solid transparent;
   color: lavender;
+  border: 2px solid transparent;
+  margin-left: 10px;
+  font-size: 1.3em;
 }
 
-header .navbar .navbar-nav .nav-link:hover {
+header .navbar .navbar-nav .nav-item:hover {
+  border-top: 2px solid white;
   color: white;
-  border-top: 2px solid lavender;
-  border-bottom: 2px solid lavender;
 }
 
 /* --- Landing page --- */
 .landing {
+  background-image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.landing .landing-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,12 +76,7 @@ header .navbar .navbar-nav .nav-link:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  height: calc(100vh - 130px);
-  background-image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  height: 100vh;
 }
 
 .landing .landing-content {
@@ -118,7 +96,7 @@ header .navbar .navbar-nav .nav-link:hover {
   width: 100%;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   text-align: center;
   color: white;
 }
