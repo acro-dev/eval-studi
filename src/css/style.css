@@ -31,6 +31,31 @@ body hr {
   width: 95%;
 }
 
+/* --- Navbar --- */
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 4000;
+}
+.navbar .navbar-brand img {
+  height: 30px;
+}
+.navbar .navbar-nav .nav-item {
+  color: lavender;
+  border: 2px solid transparent;
+  margin-left: 10px;
+  font-size: 1.3em;
+}
+.navbar .navbar-nav .nav-item:hover {
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+#events-page .navbar {
+  background: linear-gradient(to bottom right, #bfabcb, #8d89a6);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Landing page --- */
 .landing {
   min-height: 100vh;
   display: flex;
@@ -39,25 +64,6 @@ body hr {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* --- Navbar --- */
-  /* --- Landing page --- */
-}
-.landing .navbar {
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 4000;
-}
-.landing .navbar .navbar-brand img {
-  height: 30px;
-}
-.landing .navbar .navbar-nav .nav-item {
-  color: lavender;
-  border: 2px solid transparent;
-  margin-left: 10px;
-  font-size: 1.3em;
-}
-.landing .navbar .navbar-nav .nav-item:hover {
-  border-bottom: 2px solid white;
-  color: white;
 }
 .landing .landing-content {
   margin: auto;

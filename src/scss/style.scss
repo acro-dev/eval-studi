@@ -48,7 +48,34 @@ body {
 .container hr {
   width: 95%;
 }
+/* --- Navbar --- */
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 4000;
+  .navbar-brand img {
+    height: 30px;
+  }
+  .navbar-nav {
+    .nav-item {
+      color: $color5;
+      border: 2px solid transparent;
+      margin-left: 10px;
+      font-size: 1.3em;
+    }
+    .nav-item:hover {
+      border-bottom: 2px solid white;
+      color: white;
+    }
+  }
+}
 
+#events-page {
+  .navbar {
+    background: linear-gradient(to bottom right, $color2, $color1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  }
+}
+/* --- Landing page --- */
 .landing {
   min-height: 100vh;
   display: flex;
@@ -59,27 +86,7 @@ body {
     position: center;
     attachment: fixed;
   }
-  /* --- Navbar --- */
-  .navbar {
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 4000;
-    .navbar-brand img {
-      height: 30px;
-    }
-    .navbar-nav {
-      .nav-item {
-        color: $color5;
-        border: 2px solid transparent;
-        margin-left: 10px;
-        font-size: 1.3em;
-      }
-      .nav-item:hover {
-        border-bottom: 2px solid white;
-        color: white;
-      }
-    }
-  }
-  /* --- Landing page --- */
+
   .landing-content {
     margin: auto;
     @include flexCenter(column);
