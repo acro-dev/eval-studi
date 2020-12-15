@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Satisfy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap");
+/* --- Fonts --- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
 
-/* --- Variables --- */
-$color1: #8d89a6;
-$color2: #bfabcb;
-$color3: #e6c0e9;
-$color4: #f2d5f8;
-$color5: lavender;
-
-$title-font: "Satisfy";
-$subtitle-font: "Lobster Two";
+$title-font: "Kavivanar";
+$subtitle-font: "Kavivanar";
 $core-font: "Montserrat";
+
+/* --- Colors --- */
+// $subtitleColor: #bfabcb;
+// $backgroundColor: #e6e6fa;
+$titleColor: #5e4352;
+$subtitleColor: #eb4511;
+$backgroundColor: #e6e6fa;
+$darkBackgroundColor: #8d89a6;
 
 /* --- Mixins --- */
 @mixin flexCenter($direction) {
@@ -26,14 +28,20 @@ $core-font: "Montserrat";
 }
 
 body {
-  background-color: $color5;
+  background-color: $backgroundColor;
   h1 {
     font-size: 3.5rem;
+    color: $titleColor;
     font-weight: 700;
   }
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
+    color: $titleColor;
+  }
+  h3 {
+    font-weight: 700;
+    color: $subtitleColor;
   }
   h1,
   h2,
@@ -57,7 +65,7 @@ body {
   }
   .navbar-nav {
     .nav-item {
-      color: $color5;
+      color: $backgroundColor;
       border: 2px solid transparent;
       margin-left: 10px;
       font-size: 1.3em;
@@ -71,7 +79,7 @@ body {
 
 #events-page {
   .navbar {
-    background: linear-gradient(to bottom right, $color2, $color1);
+    background: linear-gradient(to bottom right, $subtitleColor, $titleColor);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
   }
 }
@@ -101,7 +109,7 @@ body {
       position: relative;
       left: 1.5rem;
       font-family: $title-font;
-      font-size: 5rem;
+      font-size: 4rem;
 
       .landing-title-small {
         display: block;
@@ -135,11 +143,12 @@ body {
 }
 
 footer {
-  background-color: $color1;
-  // box-shadow: 0 -5px 5px $color2;
+  background-color: $darkBackgroundColor;
+  // box-shadow: 0 -5px 5px $subtitleColor;
   h2 {
     font-size: 2rem;
     font-weight: 400;
+    color: white;
   }
   a:hover {
     text-decoration: none;
@@ -176,7 +185,7 @@ footer {
       text-decoration: none;
     }
     .event-date {
-      background-color: $color1;
+      background-color: $titleColor;
       border-radius: 10px 0 0 10px;
       width: 5rem;
       height: 5rem;
