@@ -7,12 +7,10 @@ $subtitle-font: "Kavivanar";
 $core-font: "Montserrat";
 
 /* --- Colors --- */
-// $subtitleColor: #bfabcb;
-// $backgroundColor: #e6e6fa;
-$titleColor: #5e4352;
-$subtitleColor: #eb4511;
-$backgroundColor: #e6e6fa;
-$darkBackgroundColor: #8d89a6;
+$titleColor: #5d4a66; //ok
+$subtitleColor: #6a5d7b; //ok
+$backgroundColor: #e6e6fa; // ok
+$darkBackgroundColor: #8d89a6; //ok
 
 /* --- Mixins --- */
 @mixin flexCenter($direction) {
@@ -79,7 +77,11 @@ body {
 
 #events-page {
   .navbar {
-    background: linear-gradient(to bottom right, $subtitleColor, $titleColor);
+    background: linear-gradient(
+      to bottom right,
+      $darkBackgroundColor,
+      $titleColor
+    );
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
   }
 }

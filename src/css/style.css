@@ -11,30 +11,25 @@
 body {
   background-color: #e6e6fa;
 }
-
 body h1 {
   font-size: 3.5rem;
-  color: #5e4352;
+  color: #5d4a66;
   font-weight: 700;
 }
-
 body h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #5e4352;
+  color: #5d4a66;
 }
-
 body h3 {
   font-weight: 700;
-  color: #eb4511;
+  color: #6a5d7b;
 }
-
 body h1,
 body h2,
 body h3 {
   font-family: "Kavivanar";
 }
-
 body hr {
   width: 90%;
 }
@@ -48,61 +43,41 @@ body hr {
   background: rgba(0, 0, 0, 0.7);
   z-index: 4000;
 }
-
 .navbar .navbar-brand img {
   height: 30px;
 }
-
 .navbar .navbar-nav .nav-item {
   color: #e6e6fa;
   border: 2px solid transparent;
   margin-left: 10px;
   font-size: 1.3em;
 }
-
 .navbar .navbar-nav .nav-item:hover {
   border-bottom: 2px solid white;
   color: white;
 }
 
 #events-page .navbar {
-  background: -webkit-gradient(linear, left top, right bottom, from(#eb4511), to(#5e4352));
-  background: linear-gradient(to bottom right, #eb4511, #5e4352);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(to bottom right, #8d89a6, #5d4a66);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 /* --- Landing page --- */
 .landing {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-image: url(../assets/photos/pexels-rebecca-zaal-764681.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-
 .landing .landing-content {
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -110,21 +85,18 @@ body hr {
   text-align: center;
   color: white;
 }
-
 .landing .landing-content .landing-title {
   position: relative;
   left: 1.5rem;
   font-family: "Kavivanar";
   font-size: 4rem;
 }
-
 .landing .landing-content .landing-title .landing-title-small {
   display: block;
   position: relative;
   left: -4.5rem;
   font-size: 2rem;
 }
-
 .landing .landing-content p {
   font-style: italic;
   width: 80%;
@@ -138,12 +110,10 @@ body hr {
   background-color: transparent;
   text-align: center;
 }
-
 #membres .card .card-img-top {
   width: 70%;
   margin: auto;
 }
-
 #membres .card h5 {
   font-family: "Kavivanar";
   font-size: 2rem;
@@ -152,23 +122,19 @@ body hr {
 footer {
   background-color: #8d89a6;
 }
-
 footer h2 {
   font-size: 2rem;
   font-weight: 400;
   color: white;
 }
-
 footer a:hover {
   text-decoration: none;
 }
-
 footer .fa-facebook:hover {
   color: #4267b2;
   background: white;
   border-radius: 50%;
 }
-
 footer .fa-instagram:hover {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
@@ -176,7 +142,6 @@ footer .fa-instagram:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 footer .fa-envelope:hover {
   color: #cc3126;
 }
@@ -185,39 +150,32 @@ footer .fa-envelope:hover {
   color: black;
   text-decoration: none;
 }
-
 #events .event .event-date {
-  background-color: #5e4352;
+  background-color: #5d4a66;
   border-radius: 10px 0 0 10px;
   width: 5rem;
   height: 5rem;
 }
-
 #events .event .event-title {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0 10px 10px 0;
 }
-
 #events .event .event-title h2 {
   font-family: "Montserrat";
   font-size: 1rem;
 }
-
 #events .event .event-title .event-place {
   font-size: 0.8rem;
 }
-
 #events .event .event-title .fa-map-marker-alt {
   color: red;
 }
-
 #events .event .event-title .fa-ellipsis-h {
   display: block;
   position: absolute;
   right: 1rem;
   bottom: 0.5rem;
 }
-
 #events .event .event-title .fa-ellipsis-v {
   display: block;
   position: absolute;
@@ -240,4 +198,5 @@ footer .fa-envelope:hover {
     width: 12rem;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
